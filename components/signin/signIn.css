@@ -1,0 +1,100 @@
+.input {
+  width: 312px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.remember_me {
+  color: #000c14;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.forgetPassword {
+  color: #e86969;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: normal;
+}
+.login {
+  width: 312px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #0e64d2;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.line {
+  width: 116px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.login_with {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.loginWithFacebook {
+  width: 312px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #1877f2;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.loginWithGoogle {
+  width: 312px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.dont_have_account {
+  color: #0d0e0e;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.signUp {
+  color: #160062;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

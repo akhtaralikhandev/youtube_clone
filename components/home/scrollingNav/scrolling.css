@@ -1,0 +1,78 @@
+.all {
+  display: flex;
+  width: 40.531px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #0f0f0f;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+.Live {
+  display: flex;
+  width: 49.844px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.gaming {
+  display: flex;
+  width: 73.609px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.Laughter {
+  display: flex;
+  width: 80.766px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.Gadgets {
+  display: flex;
+  width: 77.516px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+/* scrolling.css */
+.scrollNavbarWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollNavbar ul {
+  display: flex;
+  gap: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scrollNavbar ul.grabbing {
+  cursor: grabbing;
+}
+
+/* Add any other necessary styling for your arrows or list items. */
+.category_li {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,65 @@
+.sidebar_sign_in {
+  display: flex;
+  width: 108.109px;
+  height: 36px;
+  padding: 0px 16px 0px 10px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sign_in_span {
+  color: #065fd4;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 257.143% */
+  letter-spacing: 0.5px;
+}
+.input_div_boundary {
+  display: flex;
+  width: 652px;
+  align-items: flex-start;
+  /* gap: 8px; */
+  border-radius: 40px 40px 40px 40px;
+  border: 1px solid #d3d3d3;
+  /* border-right: 0px; */
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px #eee inset;
+}
+.input_div_ {
+  border-radius: 40px 0px 0px 40px;
+  /* border: 1px solid #d3d3d3; */
+  display: flex;
+  padding: 10px 16px 10px 19px;
+  align-items: flex-start;
+  /* gap: 10px; */
+  flex: 1 0 0;
+}
+.input_div_:focus {
+  outline: none;
+}
+.navbar_search {
+  display: flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 0px 40px 40px 0px;
+  border: 1px solid #d3d3d3;
+  background: #f8f8f8;
+}
+.mice {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: #0f0f0f;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+
+  flex-shrink: 0;
+}

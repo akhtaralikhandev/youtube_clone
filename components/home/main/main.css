@@ -1,0 +1,31 @@
+.main {
+  /* margin-left: 300px; */
+  transition: 0.5s;
+}
+.title {
+  color: #0f0f0f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.channel_name {
+  color: #606060;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+.views {
+  color: #606060;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+.signIn {
+  transition: 0.5s;
+}

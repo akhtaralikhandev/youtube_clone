@@ -1,0 +1,65 @@
+.sideBar {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  /* transition: 0.5s; */
+}
+.sidebar {
+  transition: 0.5s;
+  /* z-index: 10; */
+}
+.side_bar_link:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+}
+.linebreak {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.home {
+  color: #0f0f0f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.side_bar_icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.sidebar_sign_in {
+  display: flex;
+  width: 108.109px;
+  height: 36px;
+  padding: 0px 16px 0px 10px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sign_in_span {
+  color: #065fd4;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 257.143% */
+  letter-spacing: 0.5px;
+}
+.sign_in_to_subscribe {
+  color: #0f0f0f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.explore_span {
+  color: #0f0f0f;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
