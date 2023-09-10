@@ -8,8 +8,10 @@ import './main.css'
 import ScrollNavbar from '../scrollingNav/scrolling'
 import SignIn from '@/components/signin/signIn'
 import { fetchFromAPI } from '../../utils/fetchFrom.js'
+
+
 const Main = () => {
-    const [videos, setVideos] = useState(null)
+    const [videos, setVideos] = useState<any[]>([]);
     const [loading, setLoading] = useState(false)
     const { display, marginLeft_, setMarginLeft, category, setDisplay, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight } = useContext(sideBarContext)
     const toggle = () => {

@@ -1,7 +1,11 @@
 import './navbar.css'
 import { useContext, useState } from 'react'
 import { sideBarContext } from '../sidebar/context'
-const Navbar = ({ onClick }) => {
+interface NavbarProps {
+    onClick: () => void; // Replace 'void' with the actual return type if needed
+}
+const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
+
     const [words, setWords] = useState("")
     const { display, marginLeft_, setMarginLeft, setDisplay, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory } = useContext(sideBarContext)
     const toggle = () => {
@@ -17,14 +21,14 @@ const Navbar = ({ onClick }) => {
         }
 
     }
-    const handleSearch = (e) => {
+    const handleSearch = (e: any) => {
         e.preventDefault()
         if (words) {
             const formattedWords = words.replace(/\s+/g, '+');
             setCategory(formattedWords);
         }
     }
-    const handleKeyPress = (e) => {
+    const handleKeyPress = (e: any) => {
         if (e.key === 'Enter') {
             handleSearch(e);
         }
