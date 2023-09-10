@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
         }
     }
     return (
-        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar fixed w-full top-0 bg-white  ">
+        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar z-30 fixed w-full top-0 bg-white  ">
             <div className="navbar_wrapper md:p-4 flex justify-between md:pl-8 md:pr-8 items-center">
                 <div className="flex items-start justify-start w-full md:p-3 p-2  gap-8">
                     <img
@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                 <div className="input_div flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">
                         <input onChange={(e) => setWords(e.target.value)} className="input_div_" type="text" />
-                        <span className='navbar_search'>
+                        <span onClick={(e) => handleSearch(e)} className='navbar_search'>
                             <img src="/images/navbar/search.png" alt="" />
                         </span>
                     </div>

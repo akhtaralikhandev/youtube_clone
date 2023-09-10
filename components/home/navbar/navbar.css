@@ -29,6 +29,7 @@
   background: #fff;
   box-shadow: 0px 1px 2px 0px #eee inset;
 }
+
 .input_div_ {
   border-radius: 40px 0px 0px 40px;
   /* border: 1px solid #d3d3d3; */
@@ -62,4 +63,18 @@
   background: #f8f8f8;
 
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .input_div_boundary {
+    display: flex;
+    width: 300px;
+    padding: 3px;
+  }
+  .navbar_search {
+    padding: 3px;
+    padding-top: 8px;
+    background-color: white;
+    border: none;
+  }
 }

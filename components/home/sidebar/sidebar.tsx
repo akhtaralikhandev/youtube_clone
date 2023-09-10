@@ -30,7 +30,7 @@ const Sidebar = () => {
                 <div className="flex w-full flex-col gap-2">
                     <div className="flex items-center justify-start w-full md:p-3 p-2 side_bar_link gap-4">
                         <img src="/images/sidebar/home.png" alt="" />
-                        <span onClick={() => setCategory("/")} className="home ">Home</span>
+                        <span onClick={() => setCategory("")} className="home ">Home</span>
                     </div>
                     <div className="flex items-center justify-start w-full md:p-3 p-2 side_bar_link gap-4">
                         <img src="/images/sidebar/shorts.png" alt="" />
