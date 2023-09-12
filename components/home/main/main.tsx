@@ -61,7 +61,7 @@ const Main = () => {
                             strokeWidthSecondary={2}
 
                         /> </div> :
-                    <div className='m-8 flex flex-wrap items-center justify-center gap-4'>
+                    <div className='m-8 flex flex-wrap items-start justify-center gap-4'>
                         {videos &&
                             videos.map((video) => (
                                 <div key={video.id.videoId} className="video items-center justify-center  w-80 flex flex-col gap-4">
