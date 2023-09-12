@@ -77,4 +77,14 @@
     background-color: white;
     border: none;
   }
+  .input_div_ {
+    padding: 2px;
+  }
+  .input_div_boundary {
+    width: 300px;
+    pad: 2px;
+  }
+  .sidebar_sign_in {
+    display: none;
+  }
 }
