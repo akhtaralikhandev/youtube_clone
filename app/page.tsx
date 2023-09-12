@@ -6,7 +6,7 @@ import { sideBarContext } from '../components/home/sidebar/context'
 import { useState } from 'react'
 import Navbar from '@/components/home/navbar/navbar'
 export default function Home() {
-  const [display, setDisplay] = useState("md:w-72 w-32")
+  const [display, setDisplay] = useState("w-0")
   const [marginLeft_, setMarginLeft] = useState("md:ml-72 ml-0")
   const [navbarDisplay, setNavbarDisplay] = useState("hidden")
   const [signInHeight, setSignInHeight] = useState("hidden")

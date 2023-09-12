@@ -9,13 +9,13 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
     const [words, setWords] = useState("")
     const { display, marginLeft_, setMarginLeft, setDisplay, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory } = useContext(sideBarContext)
     const toggle = () => {
-        if (display === "md:w-72 w-32") {
+        if (display === "md:w-72 w-48") {
             setDisplay("w-0")
             setMarginLeft("md:ml-72 ml-0")
             setNavbarDisplay("block")
         }
         else if (display === "w-0") {
-            setDisplay("md:w-72 w-32")
+            setDisplay("md:w-72 w-48")
             setMarginLeft("md:ml-72 ml-0")
             setNavbarDisplay("hidden")
         }
@@ -34,9 +34,9 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
         }
     }
     return (
-        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar md:mt-0 mt-4 z-30 fixed w-full top-0 bg-white  ">
-            <div className="navbar_wrapper md:p-4 flex justify-center md:justify-between md:pl-8 md:pr-8 items-center">
-                <div className="flex md:items-start md:justify-start items-center justify-center w-full md:p-3 p-2 gap-2  md:gap-8">
+        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar md:pt-0 pt-4 z-30 fixed w-full top-0 bg-white  ">
+            <div className="navbar_wrapper md:p-4 pl-2 pr-2 w-full relative flex justify-center  md:justify-between md:pl-8 md:pr-8 items-start md:items-center">
+                <div className="md:flex w-32 absolute md:relative left-4   md:items-start md:justify-start items-center justify-center  md:p-3 p-2 gap-2  md:gap-8">
                     <img
                         onClick={() => toggle()}
                         className="side_bar_link"
@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                 <div className="input_div md:mt-0  flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">
                         <input value={words} autoComplete='off'
-                            onChange={(e) => setWords(e.target.value)} className="input_div_" />
+                            onChange={(e) => setWords(e.target.value)} className="input_div_ w-full" />
                         <span onClick={(e) => handleSearch(e)} className='navbar_search'>
                             <img src="/images/navbar/search.png" alt="" />
                         </span>
@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                     </span>
                 </div>
                 <div className="right flex items-center gap-8">
-                    <div className=' cursor-pointer'>
+                    <div className=' hidden cursor-pointer'>
                         <img src="/images/navbar/more.png" alt="" />
                     </div>
                     <div onClick={() => onClick()} className="sidebar_sign_in lg:block hidden cursor-pointer">
