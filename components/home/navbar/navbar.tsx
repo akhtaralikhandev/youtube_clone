@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                     />
                     <img className="ml-12 md:block hidden" src="/images/sidebar/YouTube.png" alt="" />
                 </div>
-                <div className="input_div md:mt-0  flex gap-4 items-center ">
+                <div className="input_div md:mt-0 md:ml-0  ml-12 flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">
                         <input value={words} autoComplete='off'
                             onChange={(e) => setWords(e.target.value)} className="input_div_ w-full" />
