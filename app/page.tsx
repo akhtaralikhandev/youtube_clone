@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import Sidebar from '../components/home/sidebar/sidebar'
+import Voice from '@/components/home/voice/voice'
 import Main from '../components/home/main/main'
 import { sideBarContext } from '../components/home/sidebar/context'
 import { useState } from 'react'
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <sideBarContext.Provider value={{ display, marginLeft_, setDisplay, setMarginLeft, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory }}>
       <div>
+        {/* <Voice /> */}
         <Navbar onClick={() => toggleSignInHeight()} />
 
         <Sidebar />

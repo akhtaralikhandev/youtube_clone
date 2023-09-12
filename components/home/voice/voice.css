@@ -1,0 +1,27 @@
+.microphone {
+  font-size: 28px;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation: circleAnimation 1s linear infinite; /* Change '2s' to '1s' for 1-second intervals */
+}
+/* CSS for the animation */
+@keyframes circleAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the circle */
+.circle {
+  animation: circleAnimation 2s linear infinite; /* Change '2s' to '1s' for 1-second intervals */
+}

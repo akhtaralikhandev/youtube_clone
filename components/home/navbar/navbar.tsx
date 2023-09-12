@@ -1,6 +1,7 @@
 import './navbar.css'
 import { useContext, useState } from 'react'
 import { sideBarContext } from '../sidebar/context'
+import Example from '../voice/voice'
 interface NavbarProps {
     onClick: () => void; // Replace 'void' with the actual return type if needed
 }
@@ -54,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                         </span>
                     </div>
                     <span className='mice cursor-pointer'>
-                        <img src="/images/navbar/mice.png" alt="" />
+                        <Example />
                     </span>
                 </div>
                 <div className="right flex items-center gap-8">
