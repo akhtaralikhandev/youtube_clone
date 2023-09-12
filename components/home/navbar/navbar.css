@@ -68,7 +68,7 @@
 @media screen and (max-width: 700px) {
   .input_div_boundary {
     display: flex;
-    width: 300px;
+    width: 200px;
     padding: 3px;
   }
   .navbar_search {
@@ -81,7 +81,7 @@
     padding: 2px;
   }
   .input_div_boundary {
-    width: 300px;
+    width: 200px;
     pad: 2px;
   }
   .sidebar_sign_in {

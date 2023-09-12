@@ -34,9 +34,9 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
         }
     }
     return (
-        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar z-30 fixed w-full top-0 bg-white  ">
+        <div onKeyDown={(e) => handleKeyPress(e)} className="navbar md:mt-0 mt-4 z-30 fixed w-full top-0 bg-white  ">
             <div className="navbar_wrapper md:p-4 flex justify-center md:justify-between md:pl-8 md:pr-8 items-center">
-                <div className="flex items-start justify-start w-full md:p-3 p-2  gap-8">
+                <div className="flex md:items-start md:justify-start items-center justify-center w-full md:p-3 p-2 gap-2  md:gap-8">
                     <img
                         onClick={() => toggle()}
                         className="side_bar_link"
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                     />
                     <img className="ml-12 md:block hidden" src="/images/sidebar/YouTube.png" alt="" />
                 </div>
-                <div className="input_div md:mt-0 mt-4 flex gap-4 items-center ">
+                <div className="input_div md:mt-0  flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">
                         <input value={words} autoComplete='off'
                             onChange={(e) => setWords(e.target.value)} className="input_div_" />
