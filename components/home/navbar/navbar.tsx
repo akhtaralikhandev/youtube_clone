@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
     return (
         <div onKeyDown={(e) => handleKeyPress(e)} className="navbar md:pt-0 pt-4 z-30 fixed w-full top-0 bg-white  ">
             <div className="navbar_wrapper md:p-4 pl-2 pr-2 w-full relative flex justify-center  md:justify-between md:pl-8 md:pr-8 items-start md:items-center">
-                <div className="md:flex w-32 absolute md:relative left-1   md:items-start md:justify-start items-center justify-center  md:p-3 p-2 gap-2  md:gap-8">
+                <div className="md:flex w-32 absolute md:relative left-0   md:items-start md:justify-start items-center justify-center  md:p-3 p-2 gap-2  md:gap-8">
                     <img
                         onClick={() => toggle()}
                         className="side_bar_link"
