@@ -7,11 +7,11 @@ const Sidebar = () => {
     const toggle = () => {
         if (display === "md:w-72 w-32") {
             setDisplay("w-0")
-            setMarginLeft("ml-12")
+            setMarginLeft("md:ml-12 ml-0")
             setNavbarDisplay("block")
         }
         else if (display === "md:w-72 w-32") {
-            setDisplay("w-72")
+            setDisplay("md:w-72 w-32")
             setMarginLeft("ml-72")
             setNavbarDisplay("hidden")
         }
@@ -25,7 +25,7 @@ const Sidebar = () => {
         }
     }
     return (
-        <div className={`sidebar  ${display}  max-h-screen overflow-x-hidden  fixed overflow-y-scroll  shadow-lg `}>
+        <div className={`sidebar  ${display} z-30  max-h-screen bg-white overflow-x-hidden  fixed overflow-y-scroll  shadow-lg `}>
             <div className="sidebar_wrapper pt-4 flex flex-col md:gap-4 md:pl-4 md:pr-4 pl-2 pr-2  items-center justify-center">
                 <div className="flex w-full flex-col gap-2">
                     <div className="flex items-center justify-start w-full md:p-3 p-2 side_bar_link gap-4">

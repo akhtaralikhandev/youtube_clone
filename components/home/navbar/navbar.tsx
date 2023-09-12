@@ -9,14 +9,14 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
     const [words, setWords] = useState("")
     const { display, marginLeft_, setMarginLeft, setDisplay, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory } = useContext(sideBarContext)
     const toggle = () => {
-        if (display === "md:w-72 w-0") {
+        if (display === "md:w-72 w-32") {
             setDisplay("w-0")
-            setMarginLeft("ml-12")
+            setMarginLeft("md:ml-72 ml-0")
             setNavbarDisplay("block")
         }
         else if (display === "w-0") {
-            setDisplay("md:w-72 w-0")
-            setMarginLeft("ml-72")
+            setDisplay("md:w-72 w-32")
+            setMarginLeft("md:ml-72 ml-0")
             setNavbarDisplay("hidden")
         }
 
@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                         src="/images/sidebar/Frame.png"
                         alt=""
                     />
-                    <img className="ml-12" src="/images/sidebar/YouTube.png" alt="" />
+                    <img className="ml-12 md:block hidden" src="/images/sidebar/YouTube.png" alt="" />
                 </div>
                 <div className="input_div md:mt-0 mt-4 flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">

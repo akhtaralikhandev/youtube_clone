@@ -56,9 +56,9 @@ const ScrollNavbar = () => {
                 onTouchEnd={handleTouchEnd}>
                 {/* Add your left arrow */}
 
-                <ul style={{ width: "900px" }} ref={scrollContainerRef} className='flex cursor-pointer ml-8 overflow-hidden items-center gap-4 justify-between'>
+                <ul style={{ width: "900px" }} ref={scrollContainerRef} className='flex  ml-8 overflow-hidden items-center gap-4 justify-between'>
                     {categories.map((x, y) => (
-                        <li onClick={() => setCategory(x?.name)} key={y} className='category_li p-2 pl-3 pr-3 flex'>
+                        <li onClick={() => setCategory(x?.name)} key={y} className='category_li cursor-pointer p-2 pl-3 pr-3 flex'>
                             {x.name}
                         </li>
                     ))}
