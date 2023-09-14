@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useSpeechRecognition } from 'react-speech-kit'
+import { useSpeechRecognition } from "react-speech-kit";
 import { useContext } from "react";
 import { sideBarContext } from "../sidebar/context";
 import "./voice.css";
 
 const Example = () => {
   const [isCircleVisible, setIsCircleVisible] = useState(true);
-  const { category, setCategory } = useContext(sideBarContext);
+  const { category, setCategory, setWords } = useContext(sideBarContext);
   const [lang, setLang] = useState("en-AU");
   const [value, setValue] = useState("");
   const [blocked, setBlocked] = useState(false);
@@ -20,6 +20,7 @@ const Example = () => {
 
   const onResult = (result) => {
     setValue(result);
+    setWords(result);
   };
   // const changeLang = (event) => {
   //     setLang(event.target.value);
@@ -40,10 +41,10 @@ const Example = () => {
   const toggle = listening
     ? stop
     : () => {
-      setBlocked(false);
-      listen({ lang });
-      setVoiceCard(true);
-    };
+        setBlocked(false);
+        listen({ lang });
+        setVoiceCard(true);
+      };
   useEffect(() => {
     // Toggle the circle visibility every 1 second
     const intervalId = setInterval(() => {
@@ -90,8 +91,9 @@ const Example = () => {
           <div className="voiceCardWrapper">
             <div
               onClick={toggle}
-              className={`circle absolute bottom-14 flex items-center justify-center left-32 ${isCircleVisible ? "circleAnimation" : ""
-                }`}
+              className={`circle absolute bottom-14 flex items-center justify-center left-32 ${
+                isCircleVisible ? "circleAnimation" : ""
+              }`}
             >
               <span className="voice_mice h-20 w-20 bg-red-800 flex items-center justify-center rounded-full cursor-pointer text-white left-32">
                 <i

@@ -7,8 +7,8 @@ interface NavbarProps {
 }
 const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
 
-    const [words, setWords] = useState("")
-    const { display, marginLeft_, setMarginLeft, setDisplay, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory } = useContext(sideBarContext)
+
+    const { display, marginLeft_, setMarginLeft, setDisplay, navbarDisplay, words, setWords, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory } = useContext(sideBarContext)
     const toggle = () => {
         if (display === "md:w-72 w-48") {
             setDisplay("w-0")
@@ -48,8 +48,14 @@ const Navbar: React.FC<NavbarProps> = ({ onClick }) => {
                 </div>
                 <div className="input_div md:mt-0 md:ml-0  ml-12 flex gap-4 items-center ">
                     <div className="input_div_boundary gap-0 flex">
-                        <input value={words} autoComplete='off'
-                            onChange={(e) => setWords(e.target.value)} className="input_div_ w-full" />
+
+                        <input
+                            value={words}
+                            autoComplete="off"
+                            placeholder={"search here"}
+                            onChange={(e) => setWords(e.target.value)}
+                            className="input_div_ w-full"
+                        />
                         <span onClick={(e) => handleSearch(e)} className='navbar_search'>
                             <img src="/images/navbar/search.png" alt="" />
                         </span>

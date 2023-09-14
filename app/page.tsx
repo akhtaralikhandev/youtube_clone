@@ -12,6 +12,7 @@ export default function Home() {
   const [navbarDisplay, setNavbarDisplay] = useState("hidden")
   const [signInHeight, setSignInHeight] = useState("hidden")
   const [category, setCategory] = useState("New")
+  const [words, setWords] = useState("")
   const toggleSignInHeight = () => {
     if (signInHeight === "hidden") {
       setSignInHeight("block")
@@ -20,7 +21,7 @@ export default function Home() {
     }
   }
   return (
-    <sideBarContext.Provider value={{ display, marginLeft_, setDisplay, setMarginLeft, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory }}>
+    <sideBarContext.Provider value={{ display, marginLeft_, setDisplay, setMarginLeft, navbarDisplay, setNavbarDisplay, signInHeight, setSignInHeight, category, setCategory, words, setWords }}>
       <div>
         {/* <Voice /> */}
         <Navbar onClick={() => toggleSignInHeight()} />
